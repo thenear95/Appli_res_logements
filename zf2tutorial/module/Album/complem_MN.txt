@@ -1,0 +1,15 @@
+The docs are really confusing/wrong about how to do the psr-0 autoloader. It should say to set Album, not Application. So basically add this to your composer.json:
+
+"autoload": {
+"psr-0": { "Album": "module/Album/src/" }
+},
+
+and run composer update. Then make sure you still have declared: public function getAutoloaderConfig() { } in Module.php or it won't work.
+php composer.phar update
+
+cd wamp\www\zf2-tutorial
+\wamp\bin\php\php5.3.13\php composer.phar update
+
+
+
+http://framework.zend.com/manual/2.1/en/user-guide/modules.html

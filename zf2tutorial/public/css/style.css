@@ -1,0 +1,155 @@
+body {
+    padding-top: 50px;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.active,
+.btn-success[disabled] {
+  background-color: #57a900;
+}
+
+.btn-success:active, .btn-success.active {
+  background-color: #57a900;
+}
+
+
+h1, h2, h3, h4, h5, p, a, small{
+    font-family: "mr-eaves-modern";
+    color: white;
+}
+
+label{
+    color: white;
+    font-family: "mr-eaves-modern";
+}
+
+
+.mn-green {
+    color: green;
+}
+
+.green-bg{
+    
+    background-color: #43C986;
+}
+
+.green-bg p{
+    color: white;
+}
+
+.black-bg {
+    background-color: #1C1F27;
+}
+.black-bg p{
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+    border: 0px;
+}
+
+a:hover{
+    border-bottom: 1px solid #FFF;
+}
+
+input, textarea{
+    color: white !important;
+}
+
+
+.form-control{
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px !important;
+    color: #555;
+    font-family: "mr-eaves-modern";
+    box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+.form-control:focus{
+    border-color: white;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #43C986 inset
+        !important;
+    box-shadow: 0px;
+    -webkit-text-fill-color: white !important;
+}
+
+.input-group-lg{
+    outline: none;
+    -webkit-appearance;
+}
+
+.btn{
+    margin-top: 25px;
+    border-radius: 0px;
+    border-color: transparent;
+    position: relative;
+    right: 10%;
+
+}
+
+.btn-inscrire{
+    background-color: #43C986;
+    color: #FFF;
+    -webkit-transition: background-color 0.5s;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.btn-inscrire:focus, .btn-inscrire:active, btn-inscrire.active, btn-inscrire:focus:active{
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: transparent;
+    background-color: #FFF;
+}
+
+.btn-co{
+    background-color: #FFFF;
+    color:#43C986;
+    -webkit-transition: background-color 0.5s;
+    border-radius: 3px;
+}
+
+.btn-co:hover{
+    background-color: #1C1F27;
+    border-color: transparent;
+    color: #43C986;
+}
+
+.btn-co:focus, btn-co:active, btn-co.active, .btn-connect:focus:active{
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: transparent;
+    background-color: #1C1F27;
+    color: white;
+}
+
+.black-bg{
+    min-height: 100vh;
+    background-color: #1C1F27
+}
+
+.green-bg{
+    min-height: 100vh;
+    background-color: #43C986
+}
+
+.whte-text{
+    color: white;
+}

@@ -1,0 +1,71 @@
+<!--<div class='mn-green'>
+    <?php /* echo sprintf($this->translate('Welcome to my not working program ')) ?>
+    <?php echo sprintf($this->translate('Congratulations! You are currently running Zend Framework version %s. '),  \Zend\Version\Version::VERSION)*/ ?>
+</div> -->
+
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+    
+                        //Lien vers fichier css qui fonctionne 
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                      ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.min.js') ?>
+</head>
+    <body> 
+        <img src="../../../../../public/images/AgroParisTech_-_logo.PNG">
+    <div class="container-fluid">
+            <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 black-bg">
+                        <h3> Bienvenue</h3>
+                            <p> Inscrivez-vous au service de résevation de résidences étudiantes à AgroParisTech.</p>
+                            <p> Veuillez entrer un e-mail valide, cet e-mail vous servira d'identifiant pour votre demande d'hébergement. Merci de créer une adresse e-mail qui soit strictement personelle, si vous en avez pas à ce jour (grauit chez Google, Yahoo, Free...) </p>
+                        
+                        <form action="#" method="post" data-toggle="validator" role="form">
+                            <div class="form-inscrp">
+                                <div class="col-xs-12 col-sm-12 col-md-7">
+                                    
+                                    <input name="email" type="email" class="form-control" placeholder="Adresse e-mail" aria-describedby="sizing-addong1">
+                                    
+                                </div>
+                            </div>
+                        <button type="submit" class="btn btn-default btn-inscrire col-md-7 col-md-offset-1 col-xs-offset-3">Valider</button>
+                        </form>
+                </div>
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 green-bg">
+                        
+                            <h3> Résidences Etudiantes AgroParisTech</h3> 
+                                <p> Vous disposez d'un compte informatique AgroParisTech ou vous avez déjà créé un compte d'accès à cette distance </p>
+                                <p> Veuillez vous identifier :</p>
+                            <form action="#" method="post" data-toggle="validator" role="form">
+                                <div class="form-connect">
+                                    <div class="class bootstrap à compléter">
+                                    
+                                        <input name="id" type="text" class="form-control" placeholder="Identifiant" aria-describedby="sizing-addong1">
+                                        
+                                        <input name="mdp" type="password" class="form-control" placeholder="Mot de passe" aria-describedby="sizing-addong1">
+                                        <a href="#"><small id="emailHelp" class="form-text">Mot de passe oublié ?</small></a>
+                                    
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-default btn-co col-md-8 col-md-offset-2 col-xs-offset-3">Connexion</button>
+                            </form>        
+                    </div>
+                </div>
+        <!-- <a href="connexion.phtml">BOUTON</a> -->
+        </div>
+</body>
+
+
+
+
+
